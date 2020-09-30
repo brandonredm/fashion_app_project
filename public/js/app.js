@@ -54,42 +54,18 @@ class App extends React.Component {
     })
   })
 }
+cancelCourse = (event) => {
+  document.getElementById("clear-form").reset();
+}
   render = () => {
     return (
       <div>
-        <h2>Add Item</h2>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="color">Color</label>
-          <input type="text" id="color" onChange={this.handleChange}/>
-          <br />
-          <label htmlFor="img">Image</label>
-          <input type="text" id="img" onChange={this.handleChange}/>
-          <br />
-          <label htmlFor="brand">Brand</label>
-          <input type="text" id="brand"
-          onChange={this.handleChange}/>
-          <br />
-          <label htmlFor="line">Line</label>
-          <input type="text" id="line"
-          onChange={this.handleChange}/>
-          <br />
-          <label htmlFor="price">Price</label>
-          <input type="number" id="price"
-          onChange={this.handleChange}/>
-          <br />
-          <label htmlFor="quantity">Quantity</label>
-          <input type="number" id="quantity"
-          onChange={this.handleChange}/>
-          <br />
-          <input type="submit" value="Add Item" />
-        </form>
-        <h3>Items</h3>
+        <h2>Wishlist</h2>
         <ul>
         {this.state.fashion.map(fashion => { return(
           <li key={fashion._id}>
-          {fashion.brand}<br />
-          {fashion.line}<br />
-          Price: ${fashion.price}<br />
+          <p className="brand">{fashion.brand} {fashion.line}</p>
+          Price: ${fashion.price}.00<br />
           Stock: {fashion.quantity}<br />
           Color: {fashion.color}<br />
           <img src={fashion.img}/>
@@ -160,6 +136,32 @@ class App extends React.Component {
           </li>
         )})}
         </ul>
+        <h2>Add Item</h2>
+        <form id="clear-form" onSubmit={this.handleSubmit}>
+          <label htmlFor="color">Color</label>
+          <input type="text" id="color" onChange={this.handleChange}/>
+          <br />
+          <label htmlFor="img">Image</label>
+          <input type="text" id="img" onChange={this.handleChange}/>
+          <br />
+          <label htmlFor="brand">Brand</label>
+          <input type="text" id="brand"
+          onChange={this.handleChange}/>
+          <br />
+          <label htmlFor="line">Line</label>
+          <input type="text" id="line"
+          onChange={this.handleChange}/>
+          <br />
+          <label htmlFor="price">Price</label>
+          <input type="number" id="price"
+          onChange={this.handleChange}/>
+          <br />
+          <label htmlFor="quantity">Quantity</label>
+          <input type="number" id="quantity"
+          onChange={this.handleChange}/>
+          <br />
+          <input type="submit" value="Add Item" />
+        </form>
       </div>
     )
   }

@@ -3,24 +3,35 @@
 
 body {
   font-family: sans-serif;
+  background: rgb(224, 110, 90);
+  background: linear-gradient(180deg, rgba(224, 110, 90, 1) 0%, rgba(236, 177, 167, 0) 20%);
 }
 
+main {
+  margin: 5%;
+}
 
 h1 {
   text-align: center;
   text-shadow: 1px 1px 2px #E06E5A;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: lemongrass-script, sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #085E1F;
 }
-img.party {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+h2 {
+  text-transform: capitalize;
+  font-family: lemongrass-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #085E1F;
+}
+
+label {
+  color: #2C045E !important;
+  size: 14pt;
 }
 
 img {
@@ -29,7 +40,6 @@ img {
   margin: 15px;
 }
 
-
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -37,20 +47,25 @@ ul {
   list-style: none;
 }
 
-
 li {
+  text-transform: capitalize;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
   flex-basis: 28%;
-  margin: 2%;
-  background: #d49ae247;
+  max-width: 300px;
+  background: #dbecdc;
+  border-radius: 5px;
   box-sizing: border-box;
-  padding: 2%;
+  padding-bottom: 25px;
   box-shadow: 2px 2px 4px #E06E5A;
+  text-align: center;
+  font-family: bebas-neue-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14pt;
 }
-
 
 button {
   background: #54D3AB !important;
@@ -64,4 +79,17 @@ input[type='submit'] {
   border-radius: 3px;
   padding: 0.5em;
   margin: auto;
+}
+
+p.brand {
+  color: #2C045E;
+  font-family: bebas-neue-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21pt;
+  margin-bottom: 10px;
+}
+
+summary {
+  margin: 15px;
 }
