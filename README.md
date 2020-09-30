@@ -7,7 +7,7 @@
 * Richard Yang
   * Database and initial setup
 * Mimi Netto
-  * Styling
+  * Wireframes, Styling and UI
 
 # User Story
 - [x] User can make a wishlist for items they would like to Buy
