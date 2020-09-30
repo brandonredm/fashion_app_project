@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+}
+
+* {
+  text-transform: capitalize;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 1px 1px 2px hotpink;
+  text-transform: uppercase;
+}
+img.party {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  width: 200px;
+  display: block;
+  margin: 15px;
+}
+
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+
+li {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 28%;
+  margin: 2%;
+  background: #d49ae247;
+  box-sizing: border-box;
+  padding: 2%;
+  box-shadow: 2px 2px 4px hotpink;
+}
+
+
+button {
+  background: hotpink !important;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+input[type='submit'] {
+  background: hotpink !important;
+  border-bottom: 2px solid skyblue;
+  border-radius: 3px;
+  padding: 0.5em;
+  margin: auto;
+}

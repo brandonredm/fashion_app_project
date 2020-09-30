@@ -1,7 +1,7 @@
-# fashion_app_project
+# Fresh Laundry Clothing
 
-#collaborators
+# collaborators
 
-Brandon Redmond
-Richard Yang
-Mimi Netto
+- Brandon Redmond
+- Richard Yang
+- Mimi Netto
