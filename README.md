@@ -1,4 +1,4 @@
-# fashion_app_project
+# Fresh Laundry Clothing
 
 # collaborators
 
