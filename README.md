@@ -2,6 +2,6 @@
 
 #collaborators
 
-Brandon Redmond
-Richard Yang
-Mimi Netto
+- Brandon Redmond
+- Richard Yang
+- Mimi Netto
