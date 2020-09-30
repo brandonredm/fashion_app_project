@@ -88,7 +88,10 @@ class App extends React.Component {
         {this.state.fashion.map(fashion => { return(
           <li key={fashion._id}>
           {fashion.brand}<br />
-          {fashion.color}<br />
+          {fashion.line}<br />
+          Price: ${fashion.price}<br />
+          Stock: {fashion.quantity}<br />
+          Color: {fashion.color}<br />
           <img src={fashion.img}/>
           <button
           value={fashion._id}
@@ -122,6 +125,33 @@ class App extends React.Component {
                   id="line"
                   onChange={this.handleChange}
                   value={this.state.line}
+                />
+                <br />
+                <label htmlFor="brand">Brand</label>
+                <br />
+                <input
+                  type="text"
+                  id="brand"
+                  onChange={this.handleChange}
+                  value={this.state.brand}
+                />
+                <br />
+                <label htmlFor="price">Price</label>
+                <br />
+                <input
+                  type="number"
+                  id="price"
+                  onChange={this.handleChange}
+                  value={this.state.price}
+                />
+                <br />
+                <label htmlFor="quantity">Quantity</label>
+                <br />
+                <input
+                  type="number"
+                  id="quantity"
+                  onChange={this.handleChange}
+                  value={this.state.quantity}
                 />
                 <br />
                 <input type="submit" value="Update Item" />
