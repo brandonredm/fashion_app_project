@@ -31,8 +31,8 @@ app.use(express.json()); //use .json(), not .urlencoded()
 app.use(express.static("public"));
 
 //ROUTES
-const birdsController = require("./controllers/birds_controller.js");
-app.use("/birds", birdsController);
+const birdsController = require("./controllers/fashion_controller.js");
+app.use("/fashion", birdsController);
 
 //LISTENER
 app.listen(PORT, () => {
