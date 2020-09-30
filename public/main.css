@@ -3,8 +3,7 @@
 
 body {
   font-family: sans-serif;
-  background: rgb(224, 110, 90);
-  background: linear-gradient(180deg, rgba(224, 110, 90, 1) 0%, rgba(236, 177, 167, 0) 20%);
+  background: linear-gradient(180deg, rgba(245, 166, 151, 1) 0%, rgba(236, 177, 167, 0) 20%);
 }
 
 main {
@@ -13,7 +12,7 @@ main {
 
 h1 {
   text-align: center;
-  text-shadow: 1px 1px 2px #E06E5A;
+  text-shadow: 1px 1px 2px #2C045E;
   text-transform: capitalize;
   font-family: lemongrass-script, sans-serif;
   font-weight: 400;
@@ -59,26 +58,29 @@ li {
   border-radius: 5px;
   box-sizing: border-box;
   padding-bottom: 25px;
-  box-shadow: 2px 2px 4px #E06E5A;
+  box-shadow: 2px 2px 4px #2C045E;
   text-align: center;
   font-family: bebas-neue-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14pt;
+  margin-bottom: 5%;
 }
 
 button {
-  background: #54D3AB !important;
+  background: #2C045E !important;
+  color: white;
   padding: 0.5em;
   margin: 0.5em;
 }
 
 input[type='submit'] {
-  background: #54D3AB !important;
+  background: #2C045E !important;
   border-bottom: 2px solid skyblue;
   border-radius: 3px;
   padding: 0.5em;
   margin: auto;
+  color: white;
 }
 
 p.brand {
