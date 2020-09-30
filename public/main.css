@@ -1,15 +1,19 @@
+/* colors - #085E1F #2C045E #54D3AB  #E06E5A */
+@import url("https://use.typekit.net/riz4fdw.css");
+
 body {
   font-family: sans-serif;
 }
 
-* {
-  text-transform: capitalize;
-}
 
 h1 {
   text-align: center;
-  text-shadow: 1px 1px 2px hotpink;
+  text-shadow: 1px 1px 2px #E06E5A;
   text-transform: uppercase;
+  font-family: lemongrass-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #085E1F;
 }
 img.party {
   width: 150px;
@@ -18,6 +22,7 @@ img.party {
   margin-left: auto;
   margin-right: auto;
 }
+
 img {
   width: 200px;
   display: block;
@@ -43,18 +48,18 @@ li {
   background: #d49ae247;
   box-sizing: border-box;
   padding: 2%;
-  box-shadow: 2px 2px 4px hotpink;
+  box-shadow: 2px 2px 4px #E06E5A;
 }
 
 
 button {
-  background: hotpink !important;
+  background: #54D3AB !important;
   padding: 0.5em;
   margin: 0.5em;
 }
 
 input[type='submit'] {
-  background: hotpink !important;
+  background: #54D3AB !important;
   border-bottom: 2px solid skyblue;
   border-radius: 3px;
   padding: 0.5em;
