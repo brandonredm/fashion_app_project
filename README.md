@@ -1,6 +1,6 @@
 # fashion_app_project
 
-#collaborators
+# collaborators
 
 - Brandon Redmond
 - Richard Yang
