@@ -55,7 +55,7 @@ class App extends React.Component {
   })
 }
 cancelCourse = (event) => {
-  document.getElementById("clear-form").reset();
+  document.getElementByID("clear-form").reset();
 }
   render = () => {
     return (
@@ -75,7 +75,7 @@ cancelCourse = (event) => {
           >Buy Item!</button>
           <details>
               <summary>Edit item</summary>
-              <form id={fashion._id} onSubmit={this.updateFashion}>
+              <form id={fashion._id} className="clear-form" onSubmit={this.updateFashion}>
                 <label htmlFor="color">Color</label>
                 <br />
                 <input
@@ -139,25 +139,30 @@ cancelCourse = (event) => {
         <h2>Add Item</h2>
         <form id="clear-form" onSubmit={this.handleSubmit}>
           <label htmlFor="color">Color</label>
-          <input type="text" id="color" onChange={this.handleChange}/>
+          <input type="text" id="color" onChange={this.handleChange} placeholder="Color"/>
           <br />
           <label htmlFor="img">Image</label>
-          <input type="text" id="img" onChange={this.handleChange}/>
+          <input type="text" id="img" onChange={this.handleChange} placeholder="http://"/>
           <br />
           <label htmlFor="brand">Brand</label>
           <input type="text" id="brand"
-          onChange={this.handleChange}/>
+          onChange={this.handleChange}
+          placeholder="Brand"/>
           <br />
           <label htmlFor="line">Line</label>
           <input type="text" id="line"
-          onChange={this.handleChange}/>
+          onChange={this.handleChange}
+          placeholder="Pants, Shirt, etc."/>
           <br />
           <label htmlFor="price">Price</label>
           <input type="number" id="price"
-          onChange={this.handleChange}/>
+          onChange={this.handleChange}
+          placeholder="$0.00"
+          />
           <br />
           <label htmlFor="quantity">Quantity</label>
           <input type="number" id="quantity"
+          placeholder="00"
           onChange={this.handleChange}/>
           <br />
           <input type="submit" value="Add Item" />
